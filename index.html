@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="utf-8">
+  <title>HAOTOWN应用中心</title>
+  <meta name="description" content="HAOTOWN应用中心">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8" ></script>
+  
+</head>
+<body>
+<div id="particles-js">
+   
+</div>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+ <div class="post1">
+ <h2 class="title">HAOTOWN 应用中心</h2>
+ <h4 class="title yiyan" id="yiyan">&nbsp;</h4>
+ <div class="xm">
+    <a href="https://oneimg.haotown.cn" target="_blank">
+     <i class="iconfont icon-pic ico1"></i>
+     <p>一图-- 精美壁纸库</p>
+    </a>
+ </div> 
+ <div class="xm">
+ 	<a href="https://ip.haotown.cn/" target="_blank">
+     <i class="iconfont icon-srcip ico1" ></i>
+     <p>高精度IP地址定位</p>
+     </a>
+ </div> 
+  <div class="xm">
+  <a href="https://tizi.host" target="_blank">
+     <i class="iconfont icon-wall ico1" ></i>
+     <p>TIZI.HOST纯净无污染</p>
+     </a>
+ </div> 
+  <div class="xm">
+  <a href="https://haocity.github.io/Tplayer/" target="_blank">
+     <i class="iconfont icon-player ico1"></i>
+     <p>TPlayer 弹幕播放器</p>
+     </a>
+ </div> 
+  <div class="xm">
+  	<a href="http://app.haotown.cn/qr" target="_blank">
+         <i class="iconfont icon-qr ico1"></i>
+         <p>Qrcode二维码生成</p>
+     </a>
+ </div> 
+  <div class="xm">
+ 	 <a href="http://app.haotown.cn/hitokoto" target="_blank">
+         <i class="iconfont icon-sms ico1"></i>
+         <p>一言/Hitokoto</p>
+     </a>
+ </div> 
+ <div class="xm">
+ 	<a href="https://oneimg.haotown.cn" target="_blank">
+         <i class="iconfont icon-icontz ico1"></i>
+         <p>IBM指数计算</p>
+     </a>
+ </div> 
+ <div class="xm">
+ 	<a href="#" >
+         <i class="iconfont icon-amy-user-search ico1"></i>
+         <p>哔站用户查询</p>
+     </a>
+ </div> 
+ </div>
+ <footer>
+ 	<p>请遵循CC BY-NC-SA 4.0 请在遵守当地相关法律法规的前提下使用本项目。</p>
+    <p><a href="https://www.haotown.cn" target="_blank">HAOTOWN</a>© 2017 <a href="http://www.miitbeian.gov.cn/"  target="_blank">鲁ICP备15029864号</a></p>
+ </footer>
+<script type="text/javascript">
+yiyan();
+function $d(a) {
+    return document.getElementById(a)
+}
+
+function yiyan() {
+    var a = new XMLHttpRequest;
+    a.onreadystatechange = function() {
+        4 == a.readyState && 200 == a.status && ($d("yiyan").innerHTML = a.responseText);
+    },
+    a.open("GET", "https://app.haotown.cn/hitokoto/?text=1", !0),
+    a.send()
+}
+ 
+</script>
+</body>
+</html>
