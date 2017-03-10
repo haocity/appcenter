@@ -106,7 +106,13 @@ footer{
 	color:#fff;
 	text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 820px) {
+	.post1>.container{
+		width:640px;
+		margin:0 auto;
+	}
+}
+@media (max-width: 640px) {
 	body{
 		height:auto;
 	}
